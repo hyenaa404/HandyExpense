@@ -75,10 +75,9 @@ public class InputUtils {
         Date date;
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 
-        String inputDateStr = sc.nextLine();
         while (true) {
             try {
-                date = sdf.parse(inputDateStr);
+                date = sdf.parse(sc.nextLine());
                 break;
             } catch (ParseException e) {
                 System.out.println("Please input a valid date with format dd-mm-yyyy");
